@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 - Live Site URL: [bilgicbe.github.io/calculator-app](http://bilgicbe.github.io/calculator-app)
 
