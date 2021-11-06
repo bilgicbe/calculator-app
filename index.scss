@@ -1,0 +1,128 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 40px auto;
+    max-width: 500px;
+}
+
+.top {
+    font-size: 26px;
+    color: white;
+    margin: 10px;
+    .top-right {
+        float: right;
+        width: 150px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .themes { 
+        width: 60px;
+        .numbers {
+            display: flex;
+            justify-content: space-around;
+        }
+        .toggle {
+            background-color: hsl(223, 35%, 20%);
+            padding: 5px;
+            border-radius: 15px;        
+            display: flex;
+            justify-content: space-between;
+            .switch {
+                cursor: pointer;
+                height:15px;
+                width:15px;
+                border-radius: 50%;
+                opacity: 0%;
+                &.first {
+                    background-color: hsl(6, 63%, 50%)
+                }
+                &.second {
+                    background-color: hsl(25, 98%, 40%)
+                }
+                &.third {
+                    background-color: hsl(176, 100%, 44%);
+                }
+                &.checked {
+                    opacity: 100%;
+                }
+            }    
+        }   
+        
+    }
+}
+
+.screen {
+    background-color: hsl(224, 36%, 15%);    
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    .result {
+        float: right;
+        font-size: 32px;
+    }
+}
+
+.buttons {
+    background-color: hsl(223, 31%, 20%);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    button {
+        display: block;
+        width: 15rem;
+        margin: 5px;
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 32px;
+        border-radius: 0.8rem;
+        border: none;
+        &.del, &.reset{
+            background-color: hsl(225, 21%, 49%);
+            color: white;
+            box-shadow: 0px 5px hsl(224, 28%, 35%);
+            font-size: 26px;
+        }
+        
+        &.eq {
+            background-color: hsl(6, 63%, 50%);
+            color: white;
+            box-shadow: 0px 5px hsl(6, 70%, 34%);
+        }
+
+        &.number {
+            background-color: hsl(30, 25%, 89%);
+            color: hsl(221, 14%, 31%);            
+            box-shadow: 0px 5px hsl(28, 16%, 65%);
+        }
+    }
+}
+

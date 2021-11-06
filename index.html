@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Calculator app</title>
+
+</head>
+<body>
+  <div class="main">
+  <div class="top">
+    <span class="logo">
+      calc
+    </span>
+    <div class="top-right">
+      <span style="margin-top: auto;">THEME</span>
+    <span class="themes">
+      <div class="numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
+      <div class="toggle">
+        <div class="switch first checked" onclick="theme1()">
+        </div>
+        <div class="switch second" onclick="theme2()">
+        </div>
+        <div class="switch third" onclick="theme3()">
+        </div>
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="screen">
+    <span class="result">0</span>
+  </div>
+  <div class="buttons">
+    <div class="row">
+      <button class="7 number" onclick="calc(7)" id="7">7</button>
+      <button class="8 number" onclick="calc(8)" id="8">8</button>
+      <button class="9 number" onclick="calc(9)" id="9">9</button>
+      <button class="del" onclick="del()" id="del">DEL</button>
+    </div>
+    <div class="row"> 
+      <button class="4 number" onclick="calc(4)" id="4">4</button>
+      <button class="5 number" onclick="calc(5)" id="5">5</button>
+      <button class="6 number" onclick="calc(6)" id="6">6</button>
+      <button class="+ number" onclick="operator('+')" id="+">+</button>
+    </div>
+    <div class="row">
+      <button class="1 number" onclick="calc(1)" id="1">1</button>
+      <button class="2 number" onclick="calc(2)" id="2">2</button>
+      <button class="3 number" onclick="calc(3)" id="3">3</button>
+      <button class="- number" onclick="operator('-')" id="-">-</button>
+    </div>
+    <div class="row">
+      <button class=". number" onclick='comma()' id=".">.</button>
+      <button class="0 number" onclick="calc(0)" id="0">0</button>
+      <button class="/ number" onclick="operator('/')" id="/">/</button>
+      <button class="x number" onclick="operator('x')" id="x">x</button>
+    </div>
+    <div class="row">
+      <button class="reset" onclick="reset()" id="reset">RESET</button>
+      <button class="eq" onclick="equal()" id="eq">=</button>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/bilgicbe/" target="_blank">Bekir Bilgiç</a>.
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
